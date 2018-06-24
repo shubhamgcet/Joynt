@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/slide_images"
+        android:layout_width="187dp"
+        android:layout_height="156dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        app:srcCompat="@drawable/heartbeat" />
+
+    <TextView
+        android:id="@+id/slide_headings"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+        android:layout_marginBottom="216dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Heading"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
