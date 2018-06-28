@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "935366416580",
+    "firebase_url": "https://joynt-c500e.firebaseio.com",
+    "project_id": "joynt-c500e",
+    "storage_bucket": "joynt-c500e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935366416580:android:7358532730907153",
+        "android_client_info": {
+          "package_name": "shubham.com.addictionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935366416580-v18i76a15si0dpchcpas58vtmrvjrh48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdc8rGz69Pqnm-RViITn-J5I0Rz55RT7w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
