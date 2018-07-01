@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(LoginActivity.this, DashBoard.class));
             finish();
         }
-        setContentView(R.layout.activity_login);
+       setContentView(R.layout.activity_login);
 
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
