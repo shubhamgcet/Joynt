@@ -18,10 +18,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Second" />
+
+        <activity android:name=".Dashboard" />
+        <activity
+            android:name=".Timeline"
+            android:theme="@style/ThemeTimeline" />
+        <activity
+            android:name=".Timeline2"
+            android:theme="@style/ThemeTimeline2" />
+        <activity
+            android:name=".Timeline3"
+            android:theme="@style/ThemeTimeline3" />
+        <activity
+            android:name=".Timeline4"
+            android:theme="@style/ThemeTimeline4" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".DashBoard" />
     </application>
 
 </manifest>
