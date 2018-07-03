@@ -16,31 +16,31 @@
         android:background="@android:color/transparent"
         tools:ignore="RtlCompat" />
 
-        <LinearLayout
-            android:id="@+id/dotsLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignTop="@+id/btn_next"
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:orientation="horizontal" />
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/btn_next"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:alpha=".5"
         android:background="@android:color/white" />
 
-        <Button
-            android:id="@+id/btn_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:text="Next"
-            android:clickable="true"
-            android:textColor="#000000"
-            android:background="@android:color/transparent" />
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next"
+        android:clickable="true"
+        android:textColor="#000000"
+        android:background="@android:color/transparent" />
 
     <Button
         android:id="@+id/btn_back"
@@ -52,7 +52,7 @@
         android:text="Back"
         android:textColor="#000000"
         android:background="@android:color/transparent"
-         />
+        />
 
 
 </RelativeLayout>
