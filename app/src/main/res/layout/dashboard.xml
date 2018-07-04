@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colourTransparentWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_timeline"
+                    android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        
+                        <ImageView
+                            android:id="@+id/imgView1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/firstaidkit"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Timeline"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView1" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_user"
+                    android:layout_width="match_parent"
+                    android:background="@color/yellow"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/heartbeat"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView2" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_chat"
+                    android:layout_width="match_parent"
+                    android:background="@color/lime"
+                    android:layout_weight="0.55"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/firstaidkit"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Timeline"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView3" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_music"
+                    android:layout_width="match_parent"
+                    android:background="@color/green"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/heartbeat"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView4" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_box1"
+                    android:layout_width="match_parent"
+                    android:background="@color/blue"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/firstaidkit"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Timeline"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView5" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_box2"
+                    android:layout_width="match_parent"
+                    android:background="@color/darkBlue"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/heartbeat"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView6" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_box3"
+                    android:layout_width="match_parent"
+                    android:background="@color/darkViolet"
+                    android:layout_weight="0.55"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/firstaidkit"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Timeline"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView7" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_box4"
+                    android:layout_width="match_parent"
+                    android:background="@color/violet"
+                    android:layout_weight="0.65"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/heartbeat"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView8" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

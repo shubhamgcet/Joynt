@@ -30,6 +30,7 @@
         <activity
             android:name=".Timeline4"
             android:theme="@style/ThemeTimeline4" />
+        <activity android:name=".DashActivity"></activity>
     </application>
 
 </manifest>

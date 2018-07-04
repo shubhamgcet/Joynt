@@ -25,4 +25,8 @@
     <color name="darkViolet">#7E50F1</color>
     <color name="darkViolet_dark">#683dd4</color>
 
+    <color name="Primary">#76FF03</color>
+    <color name="PrimaryDark">#64DD17</color>
+    <color name="LightGrey">#ededed</color>
+
 </resources>
