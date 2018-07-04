@@ -19,7 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Second" />
-
         <activity android:name=".Dashboard" />
         <activity
             android:name=".Timeline"
