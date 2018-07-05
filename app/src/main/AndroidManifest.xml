@@ -22,6 +22,10 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".DashBoard" />
+        <activity
+            android:name=".Navigation_Activity"
+            android:label="@string/title_activity_navigation_"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

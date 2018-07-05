@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_psycho"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Pscho Education" />
+        <item
+            android:id="@+id/nav_family"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Family of recovering addict" />
+        <item
+            android:id="@+id/nav_tracking"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tracking" />
+        <item
+            android:id="@+id/nav_universal_care_plan"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Care Plan" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Help near you" />
+        <item
+            android:id="@+id/nav_inspiration"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Inspiration" />
+
+    </group>
+
+    <item android:title="Connect us">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About us" />
+            <item
+                android:id="@+id/nav_story"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Share your Story" />
+        </menu>
+    </item>
+
+</menu>
