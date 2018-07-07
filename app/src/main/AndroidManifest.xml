@@ -25,6 +25,10 @@
         <activity
             android:name=".Navigation_Activity"
             android:label="@string/title_activity_navigation_"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
             android:theme="@style/AppTheme"></activity>
     </application>
 

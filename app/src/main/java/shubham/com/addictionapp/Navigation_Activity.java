@@ -1,5 +1,6 @@
 package shubham.com.addictionapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -59,6 +60,7 @@ public class Navigation_Activity extends AppCompatActivity
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -67,7 +69,10 @@ public class Navigation_Activity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_logout)
+        {
+            Intent logout = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(logout);
 
             return true;
         }
@@ -82,10 +87,13 @@ public class Navigation_Activity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+
             // Handle the camera action
+            startActivity(new Intent(Navigation_Activity.this,Home.class));
         }
         else if (id == R.id.nav_psycho)
         {
+
 
         }
         else if (id == R.id.nav_family)
