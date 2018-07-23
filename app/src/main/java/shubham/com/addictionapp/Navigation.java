@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class DashBoard extends AppCompatActivity {
+public class Navigation extends AppCompatActivity {
 
     private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
             changeEmail, changePassword, sendEmail, remove, signOut;
@@ -43,7 +43,7 @@ public class DashBoard extends AppCompatActivity {
                 if (user == null) {
                     // user auth state is changed - user is null
                     // launch login activity
-                    startActivity(new Intent(DashBoard.this, LoginActivity.class));
+                    startActivity(new Intent(Navigation.this, LoginActivity.class));
                     finish();
                 }
             }
@@ -103,11 +103,11 @@ public class DashBoard extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(DashBoard.this, "Email address is updated. Please sign in with new email id!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(Navigation.this, "Email address is updated. Please sign in with new email id!", Toast.LENGTH_LONG).show();
                                         signOut();
                                         progressBar.setVisibility(View.GONE);
                                     } else {
-                                        Toast.makeText(DashBoard.this, "Failed to update email!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(Navigation.this, "Failed to update email!", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
                                 }
@@ -147,11 +147,11 @@ public class DashBoard extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
-                                            Toast.makeText(DashBoard.this, "Password is updated, sign in with new password!", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(Navigation.this, "Password is updated, sign in with new password!", Toast.LENGTH_SHORT).show();
                                             signOut();
                                             progressBar.setVisibility(View.GONE);
                                         } else {
-                                            Toast.makeText(DashBoard.this, "Failed to update password!", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(Navigation.this, "Failed to update password!", Toast.LENGTH_SHORT).show();
                                             progressBar.setVisibility(View.GONE);
                                         }
                                     }
@@ -188,10 +188,10 @@ public class DashBoard extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(DashBoard.this, "Reset password email is sent!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(Navigation.this, "Reset password email is sent!", Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(View.GONE);
                                     } else {
-                                        Toast.makeText(DashBoard.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(Navigation.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
                                 }
@@ -213,12 +213,12 @@ public class DashBoard extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(DashBoard.this, "Your profile is deleted:( Create a account now!", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(DashBoard.this, SignUpActivity.class));
+                                        Toast.makeText(Navigation.this, "Your profile is deleted:( Create a account now!", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(Navigation.this, SignUpActivity.class));
                                         finish();
                                         progressBar.setVisibility(View.GONE);
                                     } else {
-                                        Toast.makeText(DashBoard.this, "Failed to delete your account!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(Navigation.this, "Failed to delete your account!", Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
                                 }
