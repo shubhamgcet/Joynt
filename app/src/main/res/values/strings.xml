@@ -2,6 +2,7 @@
     <string name="app_name">AddictionApp</string>
     <string name="action_sign_in_short">Register</string>
     <string name="email">Email</string>
+    <string name="psycho_education">Psycho-Education</string>
     <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
     <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
     <string name="change_email">Change Email</string>
@@ -125,4 +126,6 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="JOYNT">Joynt</string>
+    <string name="text_detail">Text Detail</string>
 </resources>

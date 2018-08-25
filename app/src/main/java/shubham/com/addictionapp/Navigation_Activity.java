@@ -13,9 +13,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
 public class Navigation_Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    LinearLayout view1, view2, view3, view4, view5, view6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,12 @@ public class Navigation_Activity extends AppCompatActivity
         setContentView(R.layout.activity_navigation_);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        view1=findViewById(R.id.view1);
+        view2=findViewById(R.id.view2);
+        view3=findViewById(R.id.view3);
+        view4=findViewById(R.id.view4);
+        view5=findViewById(R.id.view5);
+        view6=findViewById(R.id.view6);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +50,61 @@ public class Navigation_Activity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        view1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Navigation_Activity.this, PsychoEducation.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+            }
+        });
+
+        view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Navigation_Activity.this, Timeline2.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+            }
+        });
+
+        view3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Navigation_Activity.this, Timeline3.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+            }
+        });
+
+        view4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Navigation_Activity.this, Timeline4.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+            }
+        });
+
+        view5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Navigation_Activity.this, PsychoEducation.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+            }
+        });
+
+        view6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Navigation_Activity.this, PsychoEducation.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -93,7 +157,7 @@ public class Navigation_Activity extends AppCompatActivity
         }
         else if (id == R.id.nav_psycho)
         {
-
+            startActivity(new Intent(Navigation_Activity.this,PsychoEducation.class));
 
         }
         else if (id == R.id.nav_family)
